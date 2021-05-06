@@ -1,0 +1,31 @@
+<h1 class="text-center" style="margin: 50px auto 50px auto">Edit Student</h1>
+
+<div class="text-center">
+    {{#if error}} <span>{{error}}</span>{{/if}}
+</div>
+
+
+<div style="display: flex; justify-content:center; align-items:center;">
+    <form class="form-signin" action="/student/{{user.indexNumber}}?_method=PUT" method="POST">
+            <div class="mb-3">
+                <input type="text" class="form-control" name="indexNumber" value="{{user.indexNumber}}" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="firstName" value="{{user.firstName}}" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="lastName" value="{{user.lastName}}" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="email" value="{{user.email}}" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="phoneNumber" value="{{user.phoneNumber}}" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="gitUsername" value="{{user.gitUsername}}" required>
+            </div>
+        <div>
+        <button class="btn btn-lg btn-success btn-block" type="submit">Save</button>
+    </form>
+</div>

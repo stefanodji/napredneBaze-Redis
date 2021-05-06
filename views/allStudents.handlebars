@@ -1,0 +1,7 @@
+{{#each arrayOfStudents}}
+    <div class="text-center" style="margin: 30px auto 20px auto">
+        <a class="btn btn-primary" href="/student/{{this.indexNumber}}">
+            <h1>{{this.firstName}} {{this.lastName}} [{{this.indexNumber}}]</h1>
+        </a>
+    </div>
+{{/each}}

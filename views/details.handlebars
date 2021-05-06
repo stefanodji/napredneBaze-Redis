@@ -1,0 +1,21 @@
+<h1 class="text-center" style="margin: 50px auto 50px auto">{{user.firstName}} {{user.lastName}} [{{user.indexNumber}}]</h1>
+
+<div class="text-center">
+    <div style="font-size: 20px; margin-bottom: 15px">
+        <li><strong>Email:</strong> {{user.email}}</li>
+        <li><strong>Phone Number:</strong> {{user.phoneNumber}}</li>
+        <li><strong>Git Username:</strong> {{user.gitUsername}}</li>
+    </div>
+    <div>
+        <a class="btn btn-success" style="font-size: 25px; margin-bottom: 50px" href='/student/repos/{{user.gitUsername}}'>Find Out!</a>
+    </div>
+</div>
+
+
+<div style="display: flex; flex-direction: row; justify-content: center">
+    <a style="margin-right: 15px;" class="btn btn-secondary" href="/">Back</a>
+    <a style="margin-right: 15px;" class="btn btn-primary" href="/student/edit/{{user.indexNumber}}">Edit</a>
+    <form action="/student/delete/{{user.indexNumber}}?_method=DELETE" method="POST">
+        <input class="btn btn-danger" type="submit" value="Delete">
+    </form>
+</div>

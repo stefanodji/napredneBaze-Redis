@@ -1,0 +1,31 @@
+<h1 class="text-center" style="margin: 50px auto 50px auto">Add Student</h1>
+
+<div class="text-center">
+    {{#if error}} <span>{{error}}</span>{{/if}}
+</div>
+
+
+<div style="display: flex; justify-content:center; align-items:center;">
+    <form class="form-signin" action="/student/add" method="POST">
+            <div class="mb-3">
+                <input type="text" class="form-control" name="indexNumber" placeholder="Index number" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="email" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="gitUsername" placeholder="Git Username" required>
+            </div>
+        <div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
+    </form>
+</div>

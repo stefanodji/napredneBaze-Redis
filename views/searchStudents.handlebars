@@ -1,0 +1,14 @@
+<h1 class="text-center" style="margin: 50px auto 50px auto">Search Students</h1>
+
+<div class="text-center">
+    {{#if error}} <span>{{error}}</span>{{/if}}
+</div>
+
+<div style="display: flex; justify-content:center; align-items:center;">
+    <form class="form-signin" action="/student/search" method="POST">
+        <div class="mb-3">
+            <input type="text" class="form-control" name="indexNumber" placeholder="Index number" required>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Search</button>
+    </form>
+</div>

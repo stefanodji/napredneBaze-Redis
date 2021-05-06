@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.homePageTitle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    height: 695px;
+    padding: 10% 20% 20% 20%;
+}
+
+.homePageGoButton{
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    width: 85px;
+    height: 55px;
+    text-decoration: none;
+    color: black;
+}
+
+.homePageGoButton:hover{
+    text-decoration: none;
+    color: rgb(29, 24, 9);
+}
+
+.homePageGoButtonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: #ff6600;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.homePageGoButtonDiv:hover{
+    background-color: #dd5b04;
+}
+
+.divFormCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+}
